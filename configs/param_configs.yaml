@@ -1,0 +1,27 @@
+knockin_CRISPRLungo:
+  ref: CRISPRLungo/data/Allele_ref.fasta
+  input: CRISPRLungo/data/Allele_Cas_treated.fastq
+  output: results/Allele_example
+  target: actgaaatctgtaagcaggt
+  control: CRISPRLungo/data/Allele_Mock.fastq
+  run_simulation: null
+  induced_sequence_path: CRISPRLungo/data/Allele_induced.fasta
+  induced_mutation_patterns: null
+  integration_file: null
+  induced_partial_similarity: null
+  large_induced_insertion: null
+  largeins_cutlen: null
+  largedel_cutlen: null
+  window: null
+  cleavage_pos: null
+  additional_target: null
+  length_min: null
+  allele_plot_window: null
+  remove_large_mutations_in_plot: null
+  only_consider_desired_mutation: false
+  mix_tag: false
+  whole_window_between_targets: false
+  show_all_between_allele: false
+  just_visualization: false
+  umi: false
+  threads: 24

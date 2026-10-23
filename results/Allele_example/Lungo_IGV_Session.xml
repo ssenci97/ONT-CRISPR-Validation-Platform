@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session genome="ref_seq/ref_wo_umi.fasta" hasGeneTrack="false" hasSequenceTrack="true" version="8">
+    <Resources>
+        <Resource path="results/visualization.sorted.bam"/>
+    </Resources>
+    
+    <Panel height="800" name="DataPanel" width="1200">
+        
+        <Track 
+            id="results/visualization.sorted.bam_coverage" 
+            name="Coverage" 
+            clazz="org.broad.igv.track.CoverageTrack" 
+            autoScale="true" 
+            viewLimits="0:50" 
+            showReference="false" 
+            snpThreshold="0.2">
+             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="50.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+
+        <Track 
+            id="results/visualization.sorted.bam" 
+            name="Lungo Filtered Reads" 
+            clazz="org.broad.igv.track.AlignmentTrack" 
+            
+            colorMode="READ_STRAND" 
+            displayMode="EXPANDED" 
+            experimentType="OTHER"
+            
+            downsampleReads="false"
+            filterSupplementaryAlignments="false" 
+            filterSecondaryAlignments="false"
+            filterDuplicateReads="false"
+            
+            showSpliceJunctions="false">
+        </Track>
+
+    </Panel>
+</Session>

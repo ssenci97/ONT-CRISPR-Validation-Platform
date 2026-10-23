@@ -1,0 +1,2 @@
+Treated_all_reads	Treated_unmapped	Treated_low_quality	Treated_short	Treated_low_cnt_reads	Treated_used		WT	Del	Ins	Sub	LargeDel	LargeIns	Inv	Complex	ComplexWithLargeMut		Precise	Precise_with_mutations	Partial	Partial_with_mutations	X	
+5784	40	3	697	0	5047		2158	1276	918	457	218	9	0	0	11		457	1385	0	0	3205	

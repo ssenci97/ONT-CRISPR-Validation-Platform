@@ -1,0 +1,2 @@
+Control_all_reads	Control_unmapped	Control_low_quality	Control_short	Control_used		Treated_all_reads	Treated_unmapped	Treated_low_quality	Treated_short	Treated_used		
+4265	51	2	751	3462		5784	40	3	697	5047	

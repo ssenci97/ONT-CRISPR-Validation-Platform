@@ -1,0 +1,76 @@
+Target_1 :ACTGAAATCTGTAAGCAGGT
+Target_2 :False
+Ref_seq :CGTGGTACGGATGAAGCGTGCCGGGAAGCGCTTCGAAATCGCCTGCTACAAAAACAAGGTCGTCGGCTGGCGGAGCGGCGTGTGAGTAGCCCCCTCCCTCGGGCCTGGGCCTGGGCCTGAGCCGTCACCTCCGAGGCGGCCTGTCTCTGCCCAAGTCGAGTGAATGGGCCAGGCTGGGGTGTTGGCCGGGGAGGAAATGGAACATTCCTGCTGTGAGCATGAGACGTCGCTGTCCGAGCTTGGCGCCTAAGCCAAGGGTTTCTTCTTTATTTGGTTGGTTCGGATTGGGTTGTTGGTTTGGGGTTTTGTTTTGTTGGTGTCATAAAAGCTGCAGCCAAGAAATCTCGTAATTGTGGTCCTTTTCCTAGAATAATGATGGCTGAGAACCTAGTCTTACGAATACTGTCATAGTTGTGGGTACATCTGGTGTCATAGATCTCAGTAGCCCTAGCAGTTTAAAGTGCGTAGTGTCTTCACTGCTGCCATCTAGGGACTGGCATTCCGTGGCAGCAGCTGTCTGCACCCCACCCCACCCTTGTGTTTCTTACGTCCTCCCATGACATTTTTCTCCAGTGAGCAAATGGTAAGGCAAATACGGTTCTGAGTTTTGAAAATGTTCCCTCAGGCCGATGCGGGCAGTTCACTTGAGGCCAGGAGTTCGAGGCCAGCCTGGCCAACATGAAACCCCATCTCTACTAAAAATACAAAGTTAGCCGGGTGTGGTGGCGCATGCCTGTAATCCCAGTTACTCAGGAGGCTGAGGCGGGAGAATCACTTGAACCCGGGAGGCTGAGGTTACAGTGACCCGAGATCGCGCCATTGCACTCCAGCCTGGGCAAAAACAGTGAAATTCCATCTAGGGGCGGGGGTTGGGGGGTAAGAAAAAGAAAACTGCCCTCTACACTAAAGGTCATCAGGGGGATTTGTTGTGTCTTGCCGTTCATGTTGTTGCCATCTCGTATTTAAATGTAAATGCATGTCCAAGTTTCAAGTATATTCACATAGGACTTTCTCTCCTGCCCTCACAAGGGAAAAAGACCTCGATGAAGTTCTGCAGACCCACTCAGTGTTTGTAAATGTTTCTAAAGGTCAGGTTGCCAAAAAGGAAGATCTCATCAGTGCGTTTGGAACAGATGACCAAACTGAAATCTGTAAGCAGGTGGGTAACAGCTGCAGCATAGCTAACCCTAATAACCATTTATAACGTATTTGTAGATATATTAAACATTAAAGGCTGTTTTTCTGGAGGAAAGACTAACCAAGCAATAATGTGAACTGCACAGTGTCACTTCTAATAATAAAGAACTTGGTGGTTTTGTTTGTTTTTTGTGGTTTTTTTTTTTTTTTTTTTGCCAAAACCTCCTGAAATCAGATTTTCTACTAAATTACCTCATTTTTCTATAAATTGCCCCATTTATAGAATGTGGTATACCTGAAAACTGAATTTGTTTTCAAGTATTTCATCTTTCAGATCCTTTTTTTTTTGGGTGGGGGGACAGAGTCTTGCTCTGTTGCCCAGGCTGGAGTGCAGTGCACTTCACTGCACTCAGCTCACTGCAACCTCTGCCTCCTGGATTCAAGCGATTCTCTTGCCTCAGCTTCCAGGGTAGCTGGGATTACAGGTGCCCACCACCCTGCCTGGCTAATTTTTGGATTTTTAGTAGAGATGGGGTTTCACCATGTTGGCCAGGTTGGTCTCAAACTCCTGACCTTGGGTGATATGCCCGCCTTAGCCACCCAAAGTGCTGGGATTACAGATGTGAGCCACTGAGCCCAGCCAAAAGATTCTTGCATCTTTTGGGCAAAGCTCAAACCATTACTTACATATTGATAGCTGGAGAGGATGAAATTTAATTTTCTCTCCATCCAGTTACTCATTTTTTATGGTTAGTTAATAAATAGTGTGTGATAGAGAAAGATAGTGATTTCTTAAATGTGTTGGCATTTTTTTAGATTTTGACTAAAGGAGAAGTTCAAGTATCAGATAAAGAAAGACACACACAACTGGAGCAGATGTTTAGGGACATTGCAACTATTGTGGCAGACAAATGTGTGAATCCTGAAACAAAGAGACCATACACCGTGATCCTTATTGAGAGAGCCATGAAGGACATCCACTATTCGGTG
+CleavagePos_1 :1157
+CleavageStrand_1 :1
+CleavagePos_2 :False
+CleavageStrand_2 :False
+Window : 5
+Window_between_cleavage : False
+induced_mut :1160_1160:Sub_1_T>C
+cut_pos_in_target :16
+original_target :1
+minimum_read_count : 0
+minimum_read_frequency : 0
+induced_sequence_path : CRISPRLungo/data/Allele_induced.fasta
+largeins_cutlen : 50
+largedel_cutlen : 50
+
+# Run
+CRISPRlungo_version : 0.3
+Command : CRISPRlungo CRISPRLungo/data/Allele_ref.fasta CRISPRLungo/data/Allele_Cas_treated.fastq results/Allele_example actgaaatctgtaagcaggt -t 24 --control CRISPRLungo/data/Allele_Mock.fastq --induced_sequence_path CRISPRLungo/data/Allele_induced.fasta
+Started : 2026-10-23 17:03:05
+Working_directory : /orfeo/cephfs/scratch/area/ssenci/senci_projects/VIRUSRES/ONT-CRISPR-Validation-Platform
+Output_directory : /orfeo/cephfs/scratch/area/ssenci/senci_projects/VIRUSRES/ONT-CRISPR-Validation-Platform/results/Allele_example
+
+# Options
+additional_target              : None
+align_sa_len_threshold         : 100
+allele_plot_lines              : 20
+allele_plot_window             : 20
+anchor_validation_only         : False
+cleavage_pos                   : 16
+clust_cutoff                   : 5
+control                        : CRISPRLungo/data/Allele_Mock.fastq
+induced_mutation_patterns      : None
+induced_paritial_similiarity   : 0.8
+induced_sequence_path          : CRISPRLungo/data/Allele_induced.fasta
+integration_file               : False
+just_visualization             : False
+large_induced_insertion        : None
+largedel_cutlen                : 50
+largeins_cutlen                : 50
+length_min                     : 10
+min_mut_freq_no_control_refmut : 0.5
+min_read_cnt                   : 0
+min_read_freq                  : 0
+minimap2_opt                   : 
+mix_tag                        : False
+mut_freq_threshold             : 0
+mutation_length_threshold_pval : -1
+no_multipass_align             : False
+only_consider_desired_mutation : False
+output_dir                     : results/Allele_example
+range_both_end_region          : 100
+ref                            : CRISPRLungo/data/Allele_ref.fasta
+remove_large_mutations_in_plot : -1
+run_simulation                 : None
+show_all_between_allele        : False
+target                         : actgaaatctgtaagcaggt
+threads                        : 24
+treated                        : CRISPRLungo/data/Allele_Cas_treated.fastq
+umi                            : False
+using_all_mutations            : False
+whole_window_between_targets   : False
+window                         : 5
+
+# Effective values
+reference_name              : Ref
+reference_length            : 2127
+treated_file_used           : CRISPRLungo/data/Allele_Cas_treated.fastq
+control_file_used           : CRISPRLungo/data/Allele_Mock.fastq
+allele_plot_window_used     : 20
+minimap2_longjoin_bandwidth : 638
+minimap2_chaining_bandwidth : 500
+induced_mutation_count      : 1
+induced_insertion_anchors   : 0
